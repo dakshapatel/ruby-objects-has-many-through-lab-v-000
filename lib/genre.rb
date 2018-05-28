@@ -13,10 +13,9 @@ class Genre
     @@all << artist
   end
 
-  #def new_song(name, artist)
-    #Song.new(name, self, artist)
-
-  #end
+  def new_song(name, artist)
+    Song.new(name, self, artist)
+  end
 
   def songs(title, genre)
     songs.select do |song|
