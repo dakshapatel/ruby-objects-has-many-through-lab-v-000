@@ -26,7 +26,7 @@ class Artist
   end
 
   def genres
-    Artist.songs.collect {|song| song.genre }
+    self.songs.collect {|song| song.genre }
     binding.pry
   end
 
